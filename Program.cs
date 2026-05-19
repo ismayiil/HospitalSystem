@@ -108,6 +108,16 @@ namespace HospitalSystem
             int id = int.Parse(Console.ReadLine());
 
             var patient = patients.FirstOrDefault(p => p.Id == id);
+            
+            /*
+                foreach (var p in patients)
+                {
+                    if (p.Id == id)
+                        return p;
+                }
+                
+                return null;    
+            */
 
             if (patient != null)
                 patient.ShowPatient();
